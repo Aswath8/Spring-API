@@ -1,0 +1,45 @@
+package com.example.demo.Contents;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
+@Entity
+public class Login {
+ 
+	@Id
+	@GeneratedValue
+	private int UserId;
+	@Override
+	public String toString() {
+		return "Login [UserId=" + UserId + ", UserName=" + UserName + ", UserPassword=" + UserPassword + "]";
+	}
+	public Login(int userId, String userName, String userPassword) {
+		super();
+		UserId = userId;
+		UserName = userName;
+		UserPassword = userPassword;
+	}
+	public int getUserId() {
+		return UserId;
+	}
+	public void setUserId(int userId) {
+		UserId = userId;
+	}
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	public String getUserPassword() {
+		return UserPassword;
+	}
+	public void setUserPassword(String userPassword) {
+		UserPassword = userPassword;
+	}
+	private String UserName;
+	private String UserPassword;
+	
+	
+}

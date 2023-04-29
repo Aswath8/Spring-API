@@ -1,0 +1,9 @@
+package com.example.demo.Contents;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class SIgnup {
+
+	
+}
